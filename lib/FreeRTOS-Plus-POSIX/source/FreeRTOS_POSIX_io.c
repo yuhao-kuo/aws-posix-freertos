@@ -11,6 +11,8 @@
  * os_printk
  */
 
+
+
 // 這裡要實作一個標準函數庫的啟動方法, 實作各個驅動程式裝置的inode
 int os_syscall_init(void)
 {
@@ -20,7 +22,7 @@ int os_syscall_init(void)
 // open不實作包含mode的功能, 僅實做成一個標準的開關介面
 int os_open(const void *path, const int flag)
 {
-    
+   // 產生一個file介面 
 }
 
 // freertos中此函數沒有太多意義 可以直接malloc成一個空值
